@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Webpage Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to Joyce Webpage: Week 6 Assignment on Interactive Webpage Demo</h1>
+
+  <h2>1. Event Handling</h2>
+  <button class="button" id="colorChanger">Click Me to Change Color</button>
+  <div id="hoverBox" style="width:200px;height:100px;background:#eee;margin:10px 0;">Hover Over Me</div>
+  <input type="text" id="keypressInput" placeholder="Type something..." />
+  <p id="keypressOutput"></p>
+  <button class="button" id="secretBtn">Double Click or Long Press Me</button>
+  <p id="secretMsg"></p>
+
+  <h2>2. Interactive Elements</h2>
+  <div class="gallery">
+    <img id="galleryImage" src="https://via.placeholder.com/200" alt="Gallery Image" />
+    <button class="button" onclick="changeImage()">Next Image</button>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-button" onclick="showTab(1)">Tab 1</button>
+    <button class="tab-button" onclick="showTab(2)">Tab 2</button>
+    <div id="tab1" class="tab-content">This is the content of Tab 1</div>
+    <div id="tab2" class="tab-content">This is the content of Tab 2</div>
+  </div>
+
+  <h2>3. Form Validation</h2>
+  <form id="myForm">
+    <label>Email: <input type="email" id="email" required /></label>
+    <p id="emailFeedback" class="feedback"></p>
+    <label>Password: <input type="password" id="password" required /></label>
+    <p id="passwordFeedback" class="feedback"></p>
+    <button type="submit" class="button">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

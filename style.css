@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.button, .tab-button {
+  padding: 10px 20px;
+  margin: 10px 5px 10px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.button:hover, .tab-button:hover {
+  background-color: #0056b3;
+}
+
+#hoverBox {
+  width: 200px;
+  height: 100px;
+  background: #eee;
+  margin: 10px 0;
+  line-height: 100px;
+  text-align: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.gallery img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.feedback {
+  font-size: 0.9em;
+  color: red;
+}
+
+.valid {
+  color: green;
+}
